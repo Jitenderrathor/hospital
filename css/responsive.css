@@ -1,0 +1,189 @@
+/* Extra large devices (1200px and down) */
+
+@media screen and (max-width: 1200px) {
+}
+
+/* Large devices (992px and down) */
+
+@media screen and (max-width: 992px) {
+  /* ================== Header Section Start ================== */
+  .header .container-center {
+    box-shadow: none;
+  }
+  .header .nav {
+    float: right;
+    position: relative;
+  }
+  .header .nav img {
+    width: 39px;
+    margin-top: 3px;
+    display: block;
+  }
+  .header .nav > ul {
+    position: fixed;
+    top: 84px;
+    right: 0px;
+    width: 250px;
+    background-color: black;
+    color: #fff;
+    padding: 0 20px;
+    border-radius: 10px;
+    transform: translateX(120%);
+    transition: all 0.5s;
+  }
+  .header .nav #menu:checked ~ ul {
+    transform: translateX(0);
+  }
+  .header .nav > ul > li {
+    float: none;
+    line-height: 36px;
+    margin-left: 00px;
+    color: #fff;
+  }
+  .header .nav ul li a {
+    color: #fff;
+  }
+  .header .nav .dropdown .submenu {
+    position: static;
+    background-color: black;
+    transform: translateY(0px);
+    opacity: 1;
+    height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    color: #fff;
+    transition: all 0.5s;
+  }
+  .header .nav .dropdown .submenu li a {
+    color: #fff;
+  }
+  header .nav .dropdown .submenu li {
+    float: none;
+    height: 500px !important;
+  }
+  .header .nav .dropdown #suba1:checked ~ .submenu {
+    height: 276px;
+  }
+  .header .nav .dropdown #subb1:checked ~ .submenu {
+    height: 276px;
+  }
+  .header .nav .dropdown #subc1:checked ~ .submenu {
+    height: 276px;
+  }
+  .header .nav .dropdown .submenu .sub_dropdown .submenu1 {
+    position: static;
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+  /* ================== Header Section end ================== */
+
+  /* ================== contact Section Start ================== */
+  .contact {
+    display: none;
+  }
+  /* ================== Contact Section end ================== */
+
+  /* ================== About Section Start ================== */
+  .aboutimage {
+    width: 65%;
+    height: 621px;
+    float: none;
+    margin: auto;
+  }
+  .aboutmain {
+    width: calc(70% - 60px);
+    margin: auto;
+    float: none;
+  }
+  /* ================== About Section end ================== */
+  .brife .container-center {
+  position: relative;
+  bottom: 150px;
+}
+}
+
+/* Medium devices (768px and down) */
+
+@media screen and (max-width: 768px) {
+  /* ================== Header Section Start ================== */
+  .header .search button {
+    display: none;
+  }
+  /* ================== Header Section end ================== */
+
+  /* ================== MainInfo Section Start ================== */
+  .maininfo .infocol {
+    flex-grow: 0.8;
+  }
+  /* ================== MainInfo Section end ================== */
+
+  /* ================== About Section Start ================== */
+  .aboutimage {
+    width: 90%;
+  }
+  .aboutmain {
+    width: calc(100% - 60px);
+  }
+  /* ================== About Section end ================== */
+
+  /* ================== Appoiment Section start ================== */
+
+  .appoiment .main-text {
+    text-align: center;
+  }
+  .appoiment .main-text h2 {
+    font-size: 38px;
+  }
+  .appoiment .main-text h4 {
+    font-size: 21px;
+  }
+  .appoiment .main-text p {
+    font-size: 14px;
+  }
+  .appoiment .main-img {
+    padding-top: 30px;
+  }
+  .appoiment .main-img img {
+    width: 100%;
+    position: relative;
+    bottom: 0px;
+  }
+  /* ================== Appoiment Section End ================== */
+}
+
+/* Small devices (576px and down) */
+
+@media screen and (max-width: 576px) {
+  .header .logo img {
+  width: 155px;
+  margin-left: 10px;
+}
+  .banner h6 {
+    font-size: 15px;
+  }
+  .banner h2 {
+    font-size: 30px;
+  }
+  .banner p {
+    font-size: 12px;
+  }
+  .maininfo .infocol {
+    flex-grow: 1;
+  }
+  .aboutimage {
+    display: none;
+  }
+  .aboutmain img {
+    width: 130px;
+    position: static;
+    display: block;
+  }
+  .aboutmain button {
+    margin-top: 10px;
+    margin-left: 0px;
+  }
+  .service .content {
+    flex-grow: 0.7;
+  }
+}
